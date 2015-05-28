@@ -23,6 +23,14 @@ The regular expression @Firewalls network interfaces for discovery
 
 For Template Cisco WLC Discovery:
 
+The value mapping AP MAC -> NAME:
+- AP MAC: It's the corresponding AP <strong>"RADIO"</strong> MAC Address;
+- NAME: You can chose anithing suits to you, i've have hostnames like AP1, AP2, ecc
+
+EXAMPLE: AP MAC -> NAME = 00:AA:BB:CC:DD:EE:FF:GG -> AP1
+
+NOTE: The MAC must be in <strong>"UPPERCASE"</strong>.
+
 The regular expression @WLCs uplink interfaces
 - Expression: Virtual Interface
 - Expression type: Result is FALSE
