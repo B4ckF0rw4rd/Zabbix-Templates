@@ -1109,6 +1109,7 @@
                                 <name>SNMP interface status (ifAdminStatus)</name>
                             </valuemap>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 Description</name>
@@ -1152,6 +1153,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 InBroadcastPkts</name>
@@ -1195,6 +1197,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 InErrors</name>
@@ -1238,6 +1241,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 InMulticastPkts</name>
@@ -1281,6 +1285,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 InOctets</name>
@@ -1324,6 +1329,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 InUcastPkts</name>
@@ -1367,6 +1373,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 OperStatus</name>
@@ -1412,6 +1419,7 @@
                                 <name>SNMP interface status (ifOperStatus)</name>
                             </valuemap>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 OutBroadcastPkts</name>
@@ -1455,6 +1463,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 OutErrors</name>
@@ -1498,6 +1507,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 OutMulticastPkts</name>
@@ -1541,6 +1551,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 OutOctets</name>
@@ -1584,6 +1595,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 OutUcastPkts</name>
@@ -1627,6 +1639,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 Speed</name>
@@ -1670,6 +1683,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
