@@ -496,6 +496,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 Ap If No Of Users 5 GHz</name>
@@ -539,6 +540,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 AP If Phy Channel Number 2.4 GHz</name>
@@ -585,6 +587,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 AP If Phy Channel Number 5 GHz</name>
@@ -631,6 +634,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 AP Ip Address</name>
@@ -674,6 +678,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
@@ -802,6 +807,7 @@ type.</description>
                                 <name>AP MAC -&gt; NAME</name>
                             </valuemap>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 - Client Incoming Bytes</name>
@@ -845,6 +851,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 - Client Ip Address</name>
@@ -888,6 +895,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 - Client Outcoming Bytes</name>
@@ -931,6 +939,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 - Client RSSI</name>
@@ -974,6 +983,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
@@ -1111,6 +1121,7 @@ type.</description>
                                 <name>SNMP interface status (ifAdminStatus)</name>
                             </valuemap>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>Inbound errors on interface {#SNMPVALUE}</name>
@@ -1154,6 +1165,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>Incoming traffic on interface {#SNMPVALUE}</name>
@@ -1197,6 +1209,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>Operational status of interface {#SNMPVALUE}</name>
@@ -1242,6 +1255,7 @@ type.</description>
                                 <name>SNMP interface status (ifOperStatus)</name>
                             </valuemap>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>Outbound errors on interface {#SNMPVALUE}</name>
@@ -1285,6 +1299,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                         <item_prototype>
                             <name>Outgoing traffic on interface {#SNMPVALUE}</name>
@@ -1328,6 +1343,7 @@ type.</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -1465,6 +1481,7 @@ WLAN.&quot;</description>
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+							<application_prototypes/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
