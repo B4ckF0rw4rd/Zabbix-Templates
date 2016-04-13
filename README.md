@@ -1,6 +1,6 @@
 # Zabbix-Templates
 
-All templates has been tested on Zabbix 2.4.X
+All templates has been tested on Zabbix 3.X
 
 To add my templates into your Zabbix distribution:
 
