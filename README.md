@@ -17,7 +17,7 @@ To add my templates into your Zabbix distribution:
 For Template Cisco ASA Discovery:
 
 The regular expression @Firewalls network interfaces for discovery
-- Expression: (Internal-Data0/0|Internal-Data1/0|Virtual254|management)
+- Expression: (Internal|Virtual|management|plane|Null)
 - Expression type: Result is FALSE
 - CaseSensitive: TRUE
 
