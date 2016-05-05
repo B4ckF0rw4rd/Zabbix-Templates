@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-04-12T12:12:10Z</date>
+    <date>2016-05-05T13:16:18Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -32,6 +32,49 @@
                 </application>
             </applications>
             <items>
+                <item>
+                    <name>Active IPSEC VPNs RemoteAccess</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>CISCO-REMOTE-ACCESS-MONITOR-MIB::crasIPSecNumSessions.0</snmp_oid>
+                    <key>crasIPSecNumSessions</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>The number of currently active IPSEC sessions.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>VPN RemoteAccess</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
                 <item>
                     <name>Active SSL VPNs RemoteAccess</name>
                     <type>4</type>
@@ -205,12 +248,55 @@
                     <logtimefmt/>
                 </item>
                 <item>
+                    <name>Connections In Use</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>CISCO-FIREWALL-MIB::cfwConnectionStatValue.protoIp.currentInUse</snmp_oid>
+                    <key>cfwConnectionStatValueCurrentInUse</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
                     <name>CPU Utilization avg last 1 min</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>CISCO-PROCESS-MIB::cpmCPUTotal1min.1</snmp_oid>
-                    <key>cpmCPUTotal1min</key>
+                    <snmp_oid>CISCO-PROCESS-MIB::cpmCPUTotal1minRev.1</snmp_oid>
+                    <key>cpmCPUTotal1minRev</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -252,8 +338,8 @@
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>CISCO-PROCESS-MIB::cpmCPUTotal5min.1</snmp_oid>
-                    <key>cpmCPUTotal5min</key>
+                    <snmp_oid>CISCO-PROCESS-MIB::cpmCPUTotal5minRev.1</snmp_oid>
+                    <key>cpmCPUTotal5minRev</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -295,8 +381,8 @@
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid>CISCO-PROCESS-MIB::cpmCPUTotal5sec.1</snmp_oid>
-                    <key>cpmCPUTotal5sec</key>
+                    <snmp_oid>CISCO-PROCESS-MIB::cpmCPUTotal5secRev.1</snmp_oid>
+                    <key>cpmCPUTotal5secRev</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -585,6 +671,49 @@
                     <port/>
                     <description/>
                     <inventory_link>6</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Max Connections Supported</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>CISCO-FIREWALL-MIB::cfwConnectionStatValue.protoIp.high</snmp_oid>
+                    <key>cfwConnectionStatValueHigh</key>
+                    <delay>3600</delay>
+                    <history>1</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>General</name>
@@ -1832,6 +1961,30 @@
                                         <key>ifOutOctets[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>FF3333</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template Cisco ASA Discovery</host>
+                                        <key>ifInErrors[{#SNMPVALUE}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>3</sortorder>
+                                    <drawtype>0</drawtype>
+                                    <color>FFFF33</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Template Cisco ASA Discovery</host>
+                                        <key>ifOutErrors[{#SNMPVALUE}]</key>
+                                    </item>
+                                </graph_item>
                             </graph_items>
                         </graph_prototype>
                     </graph_prototypes>
@@ -1885,7 +2038,17 @@
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template Cisco ASA Discovery:cpmCPUTotal1min.last(0)}&gt;80</expression>
+            <expression>{Template Cisco ASA Discovery:cfwConnectionStatValueHigh.last(0)}/{Template Cisco ASA Discovery:cfwConnectionStatValueCurrentInUse.last(0)}&lt;20</expression>
+            <name>{HOST.NAME} Connections Free &lt; 20 %</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Connections Free &lt; 20 %</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Cisco ASA Discovery:cpmCPUTotal1minRev.last(0)}&gt;80</expression>
             <name>{HOST.NAME}  CPU Over 85 %</name>
             <url/>
             <status>0</status>
@@ -1935,7 +2098,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Cisco ASA Discovery:cpmCPUTotal5sec.nodata(14400)}=1</expression>
+            <expression>{Template Cisco ASA Discovery:cpmCPUTotal5secRev.nodata(14400)}=1</expression>
             <name>{HOST.NAME} SNMP Failed</name>
             <url/>
             <status>0</status>
@@ -1972,7 +2135,7 @@
                 <graph_item>
                     <sortorder>0</sortorder>
                     <drawtype>5</drawtype>
-                    <color>00C800</color>
+                    <color>00EE00</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
@@ -1984,13 +2147,60 @@
                 <graph_item>
                     <sortorder>1</sortorder>
                     <drawtype>5</drawtype>
-                    <color>0000CC</color>
+                    <color>0000EE</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template Cisco ASA Discovery</host>
                         <key>crasL2LNumSessions</key>
+                    </item>
+                </graph_item>
+               <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>EEEE00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Cisco ASA Discovery</host>
+                        <key>crasIPSecNumSessions</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Connections Usage</name>
+            <width>900</width>
+            <height>400</height>
+            <yaxismin>0.0000</yaxismin>
+            <yaxismax>100.0000</yaxismax>
+            <show_work_period>0</show_work_period>
+            <show_triggers>1</show_triggers>
+            <type>0</type>
+            <show_legend>1</show_legend>
+            <show_3d>0</show_3d>
+            <percent_left>0.0000</percent_left>
+            <percent_right>0.0000</percent_right>
+            <ymin_type_1>1</ymin_type_1>
+            <ymax_type_1>2</ymax_type_1>
+            <ymin_item_1>0</ymin_item_1>
+            <ymax_item_1>
+                <host>Template Cisco ASA Discovery</host>
+                <key>cfwConnectionStatValueHigh</key>
+            </ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>00AA00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Cisco ASA Discovery</host>
+                        <key>cfwConnectionStatValueCurrentInUse</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2014,15 +2224,40 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
+                    <sortorder>2</sortorder>
                     <drawtype>1</drawtype>
-                    <color>BB0000</color>
+                    <color>EE0000</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template Cisco ASA Discovery</host>
-                        <key>cpmCPUTotal5sec</key>
+                        <key>cpmCPUTotal5secRev</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>0000EE</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Cisco ASA Discovery</host>
+                        <key>cpmCPUTotal5minRev</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>0</drawtype>
+
+                    <color>00EE00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template Cisco ASA Discovery</host>
+                        <key>cpmCPUTotal1minRev</key>
                     </item>
                 </graph_item>
             </graph_items>
