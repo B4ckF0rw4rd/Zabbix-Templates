@@ -2038,12 +2038,12 @@
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template Cisco ASA Discovery:cfwConnectionStatValueHigh.last(0)}/{Template Cisco ASA Discovery:cfwConnectionStatValueCurrentInUse.last(0)}&lt;20</expression>
-            <name>{HOST.NAME} Connections Free &lt; 20 %</name>
+            <expression>{Template Cisco ASA Discovery:cfwConnectionStatValueCurrentInUse.last(0)}/{Template Cisco ASA Discovery:cfwConnectionStatValueHigh.last(0)}&gt;0.80</expression>
+            <name>{HOST.NAME} Connections In Use &gt; 80 %</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
-            <description>Connections Free &lt; 20 %</description>
+            <description>Connections In Use &gt; 80 %</description>
             <type>0</type>
             <dependencies/>
         </trigger>
