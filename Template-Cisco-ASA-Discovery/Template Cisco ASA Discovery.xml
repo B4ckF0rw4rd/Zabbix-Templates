@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-05-05T13:16:18Z</date>
+    <date>2017-08-28T19:00:00Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -1298,7 +1298,7 @@
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>pps</units>
-                            <delta>0</delta>
+                            <delta>1</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1386,7 +1386,7 @@
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>pps</units>
-                            <delta>0</delta>
+                            <delta>1</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1474,7 +1474,7 @@
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>pps</units>
-                            <delta>0</delta>
+                            <delta>1</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1564,7 +1564,7 @@
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>pps</units>
-                            <delta>0</delta>
+                            <delta>1</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1652,7 +1652,7 @@
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>pps</units>
-                            <delta>0</delta>
+                            <delta>1</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1740,7 +1740,7 @@
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>pps</units>
-                            <delta>0</delta>
+                            <delta>1</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
