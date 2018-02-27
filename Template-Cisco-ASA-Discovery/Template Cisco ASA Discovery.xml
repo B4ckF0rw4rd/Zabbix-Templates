@@ -895,7 +895,7 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Memoty Total</name>
+                    <name>Memory Total</name>
                     <type>15</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
