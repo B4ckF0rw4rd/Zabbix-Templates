@@ -29,7 +29,43 @@ The value mapping AP MAC -> NAME:
 
 EXAMPLE: AP MAC -> NAME = 00:AA:BB:CC:DD:EE:FF:GG -> AP1
 
-NOTE: The MAC must be in <strong>"UPPERCASE"</strong>.
+Thanks to the help of <strong>@DRN88</strong> if you wanna create a quick Value map:
+
+1. Configure SSH Client to save your terminal log. Like putty
+2. Log into your WLC with ssh
+3. Run this command: `show access-point-config` then keep pressing `q` (not space for more)
+4. Quit putty session and find your log: `putty.log`
+5. Run this bash script to generate the value map XML
+```bash
+egrep "(Cisco AP Name|MAC Address)" putty.log | awk 'NR%2{printf "%s ",$0;next;}1' | awk '{print $4","toupper($NF)}' | awk -f wlc.awk | xmllint --format - > zabbix-wlc-valuemap.xml
+```
+6. Import `zabbix-wlc-valuemap.xml` into zabbix
+
+Content of `wlc.awk`
+
+```awk
+BEGIN{
+FS=","
+print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+print "<zabbix_export>"
+print "<version>3.4</version>"
+print "<date>2018-03-09T11:56:38Z</date>"
+print "<value_maps>"
+print "<value_map>"
+print "<name>AP MAC -> NAME</name>"
+}
+{
+  print "<mapping>"
+  print "<value>"$2"</value>"
+  print "<newvalue>"$1"</newvalue>"
+  print "</mapping>"
+}
+END{
+print "</value_map>"
+print "</value_maps>"
+print "</zabbix_export>"
+}
+```
 
 The regular expression @WLCs uplink interfaces
 - Expression: Virtual Interface
