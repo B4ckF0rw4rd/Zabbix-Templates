@@ -4,6 +4,8 @@ All templates has been tested on Zabbix 3.X
 
 To add my templates into your Zabbix distribution:
 
+0 - Download the Cisco MIBs from ftp://ftp.cisco.com/pub/mibs/v2
+
 1 - Download the desired .xml
 
 2 - From Zabbix Web GUI: Configuration -> Templates and click "import"
