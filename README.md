@@ -1,4 +1,5 @@
 # Zabbix-Templates
+# PROJECT DISCONTINUED, NO SPARE TIME LEFT TO KEEP UP WITH IT
 
 All templates has been tested on Zabbix 3.X
 
