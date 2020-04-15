@@ -51,11 +51,12 @@ BEGIN{
 FS=","
 print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
 print "<zabbix_export>"
-print "<version>3.4</version>"
-print "<date>2018-03-09T11:56:38Z</date>"
+print "<version>4.0</version>"
+print "<date>2020-04-15T00:00:00Z</date>"
 print "<value_maps>"
 print "<value_map>"
 print "<name>AP MAC -> NAME</name>"
+print "<mappings>"
 }
 {
   print "<mapping>"
@@ -64,6 +65,7 @@ print "<name>AP MAC -> NAME</name>"
   print "</mapping>"
 }
 END{
+print "</mappings>"
 print "</value_map>"
 print "</value_maps>"
 print "</zabbix_export>"
